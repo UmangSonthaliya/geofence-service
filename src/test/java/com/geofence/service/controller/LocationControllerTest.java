@@ -34,6 +34,7 @@ class LocationControllerTest {
     private VehicleStateService stateService;
 
     @Test
+    @SuppressWarnings("null")
     void handleLocation_ValidEvent_ReturnsTransition() throws Exception {
         LocationEvent event = new LocationEvent("V001", 12.9350, 77.6650, 1000L);
         ZoneTransitionEvent transition = new ZoneTransitionEvent("V001", null, "bellandur", 1000L);
@@ -49,6 +50,7 @@ class LocationControllerTest {
     }
 
     @Test
+    @SuppressWarnings("null")
     void handleLocation_InvalidEvent_ReturnsBadRequest() throws Exception {
         LocationEvent event = new LocationEvent("", 200.0, 200.0, -1L);
 
