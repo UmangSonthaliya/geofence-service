@@ -1,9 +1,9 @@
 # Geofence Service
 
-A high-performance, real-time geofencing service for vehicle location tracking built with Spring Boot 3.3. This service processes GPS location events, detects zone transitions using accurate polygon geofencing, and maintains vehicle state persistence with Redis.
+A high-performance, real-time geofencing service for vehicle location tracking built with Spring Boot 3.3.5. This service processes GPS location events, detects zone transitions using accurate polygon geofencing, and maintains vehicle state persistence with Redis.
 
 ![Java 21](https://img.shields.io/badge/Java-21-orange)
-![Spring Boot 3.3](https://img.shields.io/badge/Spring%20Boot-3.3-green)
+![Spring Boot 3.3.5](https://img.shields.io/badge/Spring%20Boot-3.3.5-green)
 ![Redis](https://img.shields.io/badge/Redis-7-red)
 ![Docker](https://img.shields.io/badge/Docker-Ready-blue)
 
