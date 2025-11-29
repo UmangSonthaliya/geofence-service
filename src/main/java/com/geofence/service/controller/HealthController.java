@@ -33,8 +33,14 @@ public class HealthController {
         
         // Check Redis connectivity
         try {
-            redisTemplate.getConnectionFactory().getConnection().ping();
-            response.put("redis", "connected");
+            var connectionFactory = redisTemplate.getConnectionFactory();
+            if (connectionFactory != null) {
+                connectionFactory.getConnection().ping();
+                response.put("redis", "connected");
+            } else {
+                response.put("redis", "unavailable");
+                response.put("status", "DEGRADED");
+            }
         } catch (Exception e) {
             response.put("redis", "disconnected");
             response.put("status", "DEGRADED");
