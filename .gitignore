@@ -1,0 +1,59 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### macOS ###
+.DS_Store
+
+### Logs ###
+*.log
+logs/
+
+### Redis ###
+dump.rdb
+
+### Maven ###
+.mvn/timing.properties
+# We generally want to commit the wrapper jar for reproducibility, but standard gitignore often excludes it.
+# However, for a deliverable zip, it should be included. Gitignore affects git, not zip usually, but good to be clean.
+#.mvn/wrapper/maven-wrapper.jar
+
+### Project Specific / Interview Prep Files ###
+INTERVIEW_TALKING_POINTS.md
+DEMO_SCRIPT.md
+STEP_BY_STEP_EXPLANATION.md
+START_HERE.md
+SETUP_GUIDE.md
+QUICK_START.md
+ENHANCEMENTS_SUMMARY.md
+Geofence-Service.postman_collection.json
