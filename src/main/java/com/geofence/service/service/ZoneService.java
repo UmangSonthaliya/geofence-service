@@ -21,7 +21,6 @@ public class ZoneService {
     @PostConstruct
     public void init() {
         log.info("Initializing geofence zones...");
-        int initialSize = zones.size();
         // Kempegowda International Airport (BLR Airport)
         zones.add(new Zone("airport", new Coordinate[]{
                 new Coordinate(77.6980, 13.2050),
